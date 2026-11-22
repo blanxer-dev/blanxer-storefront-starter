@@ -42,7 +42,7 @@ The full docs are at https://developers.blanxer.com (agent index: https://develo
   - **Other agents:** Codex resumes with `codex resume --last`. Cursor, Gemini CLI and claude.ai: add `https://mcp.blanxer.com/mcp` as a remote MCP server. If the tool needs a restart, write `BLANXER-PROGRESS.md` first.
 - Ask for the store subdomain (`mystore` in `mystore.blanxer.io`) or its link.
 - Read `https://api.blanxer.com/store/check_domain?domain=<subdomain>`. Show: store name, plan, product count (`/product/public/<_id>` length), and the payment methods the site will offer (rules in https://developers.blanxer.com/api-docs/checkout.md).
-  - `plan_info.features.online_payments` false (no `plan_info`: plan not in `basic / premium / plus / platinum / elite`) → "your site will take Cash on Delivery only".
+  - `plan_info.features.online_payments` false (no `plan_info`: plan not in `basic / premium / plus / platinum / elite / enterprise`) → "your site will take Cash on Delivery only".
   - `customer_program.enabled` → "shoppers check out as guests on the new site".
 - Run `blanxer_audit_seo` and look for catalog gaps (products without photos, prices, categories or SEO text). Show what's missing; fix later in step 4.
 
